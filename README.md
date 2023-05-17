@@ -49,7 +49,6 @@ And It is successfully added.
 ![ITI Group is Successfully Added](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/group02.png?raw=true)
 =======
 ![ITI Group is Successfully Added](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/group_02.png?raw=true)
->>>>>>> e82c41f (fix issue with image url in README)
 
 
 ## Add User To Group
