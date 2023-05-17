@@ -11,8 +11,8 @@ local username=$(whiptail --inputbox "Enter username:" 8 40 --title "Add User" 3
 
 # Function to list users
 list_users() {
-local users=$(cut -d: -f1 /etc/passwd | sort)
-  whiptail --title "List Users" --msgbox "Users:\n\n$users" 20 60
+local users=$(cut -d: -f1 /etc/passwd )
+  whiptail --title "List Users" --scrolltext --msgbox "Users:\n\n$users" 20 60
 }
 
 # Function to delete a user

@@ -9,8 +9,8 @@ create_group() {
 
 # Function to list groups
 list_groups() {
- local groups=$(cut -d: -f1 /etc/group | sort)
-  whiptail --title "List Groups" --msgbox "Groups:\n\n$groups" 20 60
+ local groups=$(cut -d: -f1 /etc/group)
+  whiptail --title "List Groups" --scrolltext --msgbox "Groups:\n\n$groups" 20 60
 }
 
 # Function to delete a group
