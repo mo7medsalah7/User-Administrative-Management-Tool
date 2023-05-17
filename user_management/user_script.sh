@@ -4,7 +4,8 @@
 add_user() {
 local username=$(whiptail --inputbox "Enter username:" 8 40 --title "Add User" 3>&1 1>&2 2>&3)
   local password=$(whiptail --passwordbox "Enter password:" 8 40 --title "Add User" 3>&1 1>&2 2>&3)
-  sudo useradd -m -p $(openssl passwd -crypt "$password") "$username"
+  sudo useradd -m -p $(openssl passwd -1 "$password") "$username"
+
   whiptail --title "User Added" --msgbox "User '$username' has been added successfully." 8 40
 }
 
