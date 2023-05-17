@@ -14,8 +14,57 @@ chmod +x main_script.sh
 
 ## Menu
 Execute main script
+
 `
 sudo ./main_script.sh
 `
 ![Menu](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/main-menu.png?raw=true)
 
+## Add User
+
+![Add User](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/add_user.png?raw=true)
+
+ - And I added the password
+
+![User Added Succesfully](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/add_user02.png?raw=true)
+
+### Check Our File System for new users
+
+![User Added to /etc/passwd](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/add_user03.png?raw=true)
+
+
+## Create Group
+
+Choose "Create group"
+
+![Create Group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/create_group.png?raw=true)
+
+Enter the Group Name, ***ITI***
+
+![ITI Group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/create_group01.png?raw=true)
+
+And It is successfully added.
+
+![ITI Group is Successfully Added](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/create_group02.png?raw=true)
+
+
+## Add User To Group
+
+![Add user to group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/addug.png?raw=true)
+
+![name of group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/addug_01.png?raw=true)
+
+![name of user to be added to the group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/addug_02.png?raw=true)
+
+![Used added to group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/addug_03.png?raw=true)
+
+Check Our file system for groups and thier users
+
+`
+cat /etc/group | tail -n 3
+`
+
+![Used added to group](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/checkug.png?raw=true)
+
+
+### All Is Good. Good Bye.
