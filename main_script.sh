@@ -25,8 +25,9 @@ while true; do
       user_menu
       ;;
     "2") # Group Management
+      source ./group_management/group_script.sh
       group_menu
-      ;;
+	    ;;
     *) # Exit
       exit 0
       ;;

@@ -22,12 +22,24 @@ delete_group() {
 
 # Function to add a user to a group
 add_user_to_group() {
-  local username=$(whiptail --inputbox "Enter username:" 8 40 --title "Add User to Group" 3>&1 1>&2
+local group_name=$(whiptail --inputbox "Enter the name of the group:" 8 40 3>&1 1>&2 2>&3)
+  local user_name=$(whiptail --inputbox "Enter the name of the user to add to the group:" 8 40 3>&1 1>&2 2>&3)
+
+  # Add the user to the group
+  sudo adduser "$user_name" "$group_name"
+
+  whiptail --title "User Added" --msgbox "User '$user_name' has been added to the group '$group_name'." 8 40
 }
 
 # Function to remove a user from a group
 remove_user_from_group() {
-  # Implementation goes here
+  local group_name=$(whiptail --inputbox "Enter the name of the group:" 8 40 3>&1 1>&2 2>&3)
+  local user_name=$(whiptail --inputbox "Enter the name of the user to remove from the group:" 8 40 3>&1 1>&2 2>&3)
+
+  # Remove the user from the group
+  sudo deluser "$user_name" "$group_name"
+
+  whiptail --title "User Removed" --msgbox "User '$user_name' has been removed from the group '$group_name'." 8 40
 }
 
 # Group menu
