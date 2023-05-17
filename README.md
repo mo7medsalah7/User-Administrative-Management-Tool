@@ -45,7 +45,7 @@ Enter the Group Name, ***ITI***
 
 And It is successfully added.
 
-![ITI Group is Successfully Added](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/create_group02.png?raw=true)
+![ITI Group is Successfully Added](https://github.com/mo7medsalah7/whiptail-bash-user-group-administration-tool/blob/main/validation/group02.png?raw=true)
 
 
 ## Add User To Group
